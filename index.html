@@ -31,9 +31,19 @@
     <label for="inputAddress">Nome Completo</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="Caio lopes..." required>
   </div>
-  <div class="form-group col-md-6">
-    <label for="CPF">CPF</label>
-    <input type="text" maxlength="11" onblur="TestaCPF()" class="form-control" id="CPF" placeholder="123.456.789.09">
+  <div class="form-group col-md-4">
+    <div class="notificaCPF" id="cpfNotificacao">CPF inválido, tente novamente</div>
+    <label for="cpf">CPF</label>
+    <input type="text" maxlength="11" onblur="testaCPF()" class="form-control" id="cpf" placeholder="123.456.789.09">
+  </div>
+  <div class="form-group col-md-2">
+    <label for="sexo">Sexo</label>
+    <select id="sexo" class="form-control">
+      
+      <option value="feminino">Feminino</option>
+      <option value="masculino">Masculino</option>
+
+    </select>
   </div>
 </div>
 
