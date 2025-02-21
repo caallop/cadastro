@@ -54,7 +54,7 @@ function testaCPF() {
 
     if (!validaCPF(inputCPF.value)) {
         cpfNotificacao.style.display = "block"; // Mostra o popup
-        inputCPF.focus(); // Retorna o foco para o campo CPF
+        
 
     } else {
         cpfNotificacao.style.display = "none"; // Esconde o popup
